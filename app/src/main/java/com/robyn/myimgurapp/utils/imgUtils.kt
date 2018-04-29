@@ -11,8 +11,8 @@ import com.robyn.myimgurapp.R
 fun loadThumbnailImage(context: Context, imgUrl: String, imageView: ImageView) {
 
     val options = RequestOptions().fitCenter()
-        .placeholder(R.drawable.ic_wait_image)
-        .error(R.drawable.ic_wait_image)
+        .placeholder(R.color.grey)
+        .error(R.color.grey)
 
     Glide.with(context)
         .load(imgUrl)
@@ -24,8 +24,8 @@ fun loadThumbnailImage(context: Context, imgUrl: String, imageView: ImageView) {
 fun loadImage(context: Context, imgUrl: String, imageView: ImageView) {
 
     val options = RequestOptions().centerCrop()
-        .placeholder(R.drawable.ic_wait_image)
-        .error(R.drawable.ic_wait_image)
+        .placeholder(R.color.grey)
+        .error(R.color.grey)
 
     Glide.with(context)
         .load(imgUrl)

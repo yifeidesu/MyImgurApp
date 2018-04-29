@@ -8,7 +8,6 @@ import android.support.v7.widget.SearchView
 import android.support.v7.widget.StaggeredGridLayoutManager
 import android.view.*
 import com.robyn.myimgurapp.R
-import com.robyn.myimgurapp.utils.EndlessScrollListener
 import com.robyn.myimgurapp.utils.showErrorMsg
 
 class TimelineFragment :
@@ -38,7 +37,10 @@ class TimelineFragment :
         mRecyclerView.adapter = adapter
 
         mRecyclerView.addOnScrollListener(object :
-            EndlessScrollListener(layoutManager, mPresenter) {
+            EndlessScrollListener(layoutManager) {
+            override fun onLoadMore(current_page: Int) {
+                //todo
+            }
         })
 
         // set refresh layout
