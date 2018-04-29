@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">my_imgur_app</string>
+
+    <string name="timeline_item_image">Timeline item image</string>
+    <string name="image">Image</string>
+    <string name="search">Search</string>
+    <string name="newest">Newest</string>
+    <string name="viral">Viral</string>
+    <string name="title_activity_main">MainActivity</string>
+</resources>
